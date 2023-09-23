@@ -1,0 +1,7 @@
+
+openssl enc -aes-256-cbc -e -in plain.txt -out encrypted.txt -pass env:ENCRYPTION_KEY
+openssl enc -aes-256-cbc -d -in encrypted.txt -out plain.txt -pass env:ENCRYPTION_KEY
+
+
+cat plain.txt | sed -E '/^ *#/d;/^ *$/d;s/^([^=]+)="(.*)"$/\1=\2/'
+
