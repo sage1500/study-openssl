@@ -1,13 +1,9 @@
 # prop1
-prop1=hello
+p_enc_prop1=hello
   
 # prop2
-prop2="foo bar${a}"
+p_enc_prop2="foo bar${a}"
 
-a = b\
-c = d
-
- # prop3
-  prop3=hoge
-
+# prop3
+p_enc_prop3=hoge
 

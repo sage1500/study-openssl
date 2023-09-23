@@ -11,3 +11,4 @@ echo d2.n=$n
 for (( i = 0; i < n; i++)); do
 	echo d2=${d2[$i]}
 done
+
